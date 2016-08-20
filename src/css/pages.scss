@@ -2209,3 +2209,123 @@
 }
 
 
+
+/****************************** page centers ******************************/
+.block__docs_centers {
+    padding-bottom: 44px;
+    
+    &.block__docs {
+        margin: 35px 0 0;
+    }
+    
+    .block__docs_lot {
+        box-shadow: 0 2px 6px 0 rgba(1,1,1,.08);
+    }
+    
+    .block__docs_lot_info {
+        padding: 31px 85px 35px 35px;
+        background: $white;
+        
+        &:hover {
+            background-color: #f5f5f5;
+        }
+    }
+    
+    .block__docs_lot_info_arrow {
+        top: 29px;
+        right: 33px;
+        background-image: url(../img/icons/arrow_down_gray.png);
+    }
+    
+    .block__docs_lot_content {
+        padding: 0 40px;
+    }
+}
+
+.block__docs_lot_info_img {
+    width: 125px;
+    float: left;
+    padding-right: 20px;
+    
+    img {
+        max-width: 100%;
+    }
+}
+
+.block__docs_lot_info_get {
+    width: 155px;
+    float: right;
+    line-height: 24px;
+}
+
+.block__docs_lot_info_get_link {
+    font-size: 14px;
+    color: #286297;
+}
+
+.block__docs_lot_info_phone {
+    width: 170px;
+    float: right;
+    line-height: 24px;
+}
+
+.block__docs_lot_info_phone_link {
+    font-size: 16px;
+    color: $black;
+}
+
+.block__docs_lot_info_title {
+    margin: 0 325px 0 125px;
+    padding-right: 20px;
+    font: 18px/24px $r-light;
+    color: $black;
+}
+
+
+
+.centers__list_wrapper {
+    padding: 27px 0 33px;
+    border-top: 1px solid #c2c6cb;
+}
+
+.centers__list {
+    padding: 11px 0 12px;
+    font-size: 14px;
+    line-height: 20px;
+    border-bottom: 1px solid #eaedef;
+    
+    &:last-child {
+        border-bottom: 0;
+    }
+}
+
+.centers__list_number {
+    width: 35px;
+    float: left;
+    color: #9fa6ae;
+}
+
+.centers__list_name {
+    width: 205px;
+    float: left;
+    padding-right: 20px;
+}
+
+.centers__list_phone {
+    width: 200px;
+    float: right;
+}
+
+.centers__list_phone_link {
+    
+    span {
+        color: #9fa6ae;
+    }
+}
+
+.centers__list_address {
+    margin-right: 200px;
+    margin-left: 240px;
+    padding-right: 20px;
+}
+

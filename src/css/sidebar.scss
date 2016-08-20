@@ -78,6 +78,10 @@
 .sidebar__menu_link_special_white {
     color: #286297;
     background-color: $white;
+    
+    &:hover {
+        background-color: #f5f5f5;
+    }
 }
 
 .sidebar__menu_bottom {
@@ -120,4 +124,28 @@
         color: #7bbdfe;
     }
 }
+
+
+
+/********** sidebar with text **********/
+.sidebar__info {
+    padding: 38px 40px 30px;
+    color: $white;
+    background-color: #286297;
+    
+    .sidebar__menu_link_special {
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
+}
+
+.sidebar__info_title {
+    margin-bottom: 31px;
+    font: 26px/32px $r-bold;
+}
+
+.sidebar__info_text {
+    margin-bottom: 34px;
+}
+
 

@@ -1,0 +1,653 @@
+/****************************** form common ******************************/
+.form {
+    position: relative;
+}
+
+.form__container_field_half {
+    width: 48.5%;
+    float: left;
+    
+    &:nth-child(2n) {
+        float: right;
+    }
+}
+
+.form__textarea {
+    width: 100%;
+    height: 96px;
+    max-width: 100%;
+    max-height: 200px;
+    padding: 5px 12px 12px;
+    font-size: 14px;
+    line-height: 27px;
+    border: 1px solid #dae4ec;
+}
+
+
+
+/****************************** form in footer ******************************/
+.form__footer {
+    position: relative;
+    margin-top: 62px;
+
+    .form__container_label {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 20px;
+        color: $black;
+        cursor: pointer;
+    }
+
+    .form__container_field {
+        margin-right: 40px;
+        height: 41px;
+    }
+    
+    .form__container_input {
+        width: 100%;
+        padding: 0 12px;
+        font-size: 14px;
+        line-height: 38px;
+        color: $gray;
+    }
+
+    .form__submit_button {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        bottom: 0;
+        right: 0;
+        display: inline-block;
+        width: 41px;
+        height: 41px;
+        background: $blue url('../img/icons/print_white.png') no-repeat center center;
+        cursor: pointer;
+    }
+}
+
+
+
+/****************************** form procedure search ******************************/
+.form__procedure_search {
+    
+    .form__container {
+        padding-bottom: 0;
+        border: 0;
+    }
+    
+    .form__container_field {
+        margin-right: 40px;
+    }
+    
+    .form__submit_button {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        bottom: 0;
+        right: 0;
+        display: inline-block;
+        width: 41px;
+        height: 41px;
+        background: $blue url('../img/icons/loop_white.png') no-repeat center center;
+        cursor: pointer;
+        transition: background-color $transition-normal;
+        
+        &:hover {
+            background-color: #236098;
+        }
+    }
+}
+
+
+
+/****************************** form procedure sidebar ******************************/
+.form__procedure {
+    .form__submit {
+        .form__submit_button {
+            margin-right: 0;
+        }
+        
+        .form__container_field {
+            float: right;
+            margin-top: 11px;
+        }
+    }
+}
+
+.form__container {
+    padding: 30px 0;
+    border-bottom: 1px solid #dae4ec;
+    float: none;
+    clear: both;
+    overflow: hidden;
+    
+    &.form__container_links {
+        padding: 21px 0 4px;
+    }
+    
+    &.form__container_toggle {
+        padding: 30px 0 9px;
+    }
+}
+
+.form__container_in {
+    padding-bottom: 21px;
+}
+
+.form__container_title {
+    margin: -9px 0 15px;
+    font: 16px/24px $r-medium;
+}
+
+.form__container_title_toggle {
+    position: relative;
+    display: inline-block;
+    padding-left: 27px;
+    cursor: pointer;
+    
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: -3px;
+        top: 50%;
+        margin-top: -10px;
+        background: url('../img/icons/arrow_up_gray.png') no-repeat center center;
+        transition: transform $transition-normal;
+    }
+    
+    &.is-active {
+        &:before {
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+.form__container_field {
+    margin-bottom: 20px;
+    
+    &.form__container_field_checkbox {
+        margin-bottom: 17px;
+        line-height: 18px;
+    }
+    
+    &.form__container_field_selected_region {
+        padding-top: 10px;
+    }
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form__container_label {
+    position: relative;
+}
+
+.form__container_info {
+    margin-bottom: 7px;
+    padding-top: 5px;
+    padding-left: 27px;
+    font: 14px/18px $r-light;
+    float: none;
+    clear: both;
+}
+
+.form__container_link {
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 21px;
+    font-size: 16px;
+    line-height: 20px;
+    border-bottom: 1px solid $black;
+    
+    &:hover {
+        border-bottom-color: transparent;
+    }
+    
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+
+//field
+.form__container_input {
+    width: 100%;
+    height: 41px;
+    padding: 12px;
+    font-size: 14px;
+    line-height: 27px;
+    border: 1px solid #dae4ec;
+    
+}
+
+
+
+//tabs list
+.form__container_tabs {
+    padding-bottom: 12px;
+    border-bottom: 0;
+}
+
+.form__container_tablist {
+    font-size: 0;
+    line-height: 0;
+    
+    li {
+        display: inline-block;
+        border: 1px solid #c7d0d7;
+        border-right: 0;
+        
+        &:last-child {
+            border-right: 1px solid #c7d0d7;
+        }
+    }
+}
+
+.form__container_tablist_label {
+    display: inline-block;
+    
+    &:hover {
+        .form__container_tablist_label_info {
+            span {
+                border-bottom-color: transparent;
+            }
+        }
+    }
+}
+
+.form__container_tablist_input {
+    display: none;
+    
+    &:checked {
+        & ~ .form__container_tablist_label_info {
+            color: #fefefe;
+            background-color: #b7c3cc;
+            
+            span {
+                border-bottom-color: transparent;
+            }
+        }
+    }
+}
+
+.form__container_tablist_label_info {
+    display: inline-block;
+    padding: 9px 15px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 18px;
+    background-color: transparent;
+    
+    transition: background-color $transition-normal, color $transition-normal;
+    
+    span {
+        border-bottom: 1px dotted $black;
+        transition: border-color $transition-normal;
+    }
+}
+
+
+
+//field dates
+.form__container_half {
+    overflow: hidden;
+    zoom: 1;
+    text-align: right;
+    
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    
+    &:after {
+        clear: both;
+    }
+    
+    &:last-child {
+        .form__container_field {
+            margin-bottom: 0;
+        }
+    }
+    
+    .form__container_field {
+        width: 50%;
+        float: left;
+    }
+    
+    .form__container_label {
+        display: block;
+        margin-top: 9px;
+        padding-left: 27px;
+    }
+    
+    .form__container_field_info_date {
+        position: absolute;
+        left: 10px;
+        top: 0;
+        font-size: 14px;
+        line-height: 41px;
+        color: $gray;
+    }
+    
+    .form__container_input {
+        width: 97px;
+    }
+    
+    .form_icon_calendar {
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        margin-top: -9px;
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        background: url('../img/icons/calendar_form_gray.png') no-repeat center center;
+        cursor: pointer;
+    }
+}
+
+
+
+// checkbox
+.form__container_field_checkbox_label {
+    display: inline-block;
+    font: 14px/18px $r-light;
+    cursor: pointer;
+    
+    span {
+        position: relative;
+        display: inline-block;
+        padding-left: 27px;
+        
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: #fff;
+            border: 1px solid #dae4ec;
+            
+            transition: background-image $transition-normal;
+        }
+    }
+}
+
+.form__container_field_checkbox_input {
+    
+    &:checked {
+        ~ span:before {
+            background-image: url('../img/icons/checkbox_checked.png');
+        }
+    }
+}
+
+
+
+//region
+.form__container_field_selected_region {
+    .form__container_input {
+        background-color: #dae4ec;
+        color: $gray;
+    }
+}
+
+.form_icon_cross {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    margin-top: -10px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icons/cross_form_gray.png) center center no-repeat;
+    cursor: pointer;
+}
+
+.form_icon_place {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    margin-top: -10px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icons/place_form_gray.png) center center no-repeat;
+    cursor: pointer;
+}
+
+
+
+//submit
+.form__submit {
+    .form__container & {
+        padding: 9px 0 21px;
+    }
+    
+    .form__container_field {
+        display: inline-block;
+    }
+}
+
+.form__submit_button {
+    margin-right: 7px;
+    padding: 0 35px;
+    font: 14px/40px $r-bold;
+    color: $white;
+    border-radius: 20px;
+    background-color: #b7c3cc;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color $transition-normal, border-color $transition-normal, background-color $transition-normal;
+    
+    &:hover {
+        background-color: #a2adb5;
+    }
+}
+
+
+
+//subscibe
+.link_subscribe {
+    display: block;
+    margin-top: 38px;
+    height: 40px;
+    font: 14px/38px $r-bold;
+    text-align: center;
+    color: $blue;
+    background-color: transparent;
+    border: 1px solid #8fafcc;
+    border-radius: 20px;
+    
+    &:hover {
+        color: $white;
+        background-color: $blue;
+        
+        .link_subscribe_print {
+            background-image: url('../img/icons/print_white.png');
+        }
+    }
+}
+
+.link_subscribe_print {
+    display: inline-block;
+    margin-right: 10px;
+    width: 16px;
+    height: 15px;
+    background: url('../img/icons/print_blue.png') no-repeat center center;
+    vertical-align: sub;
+    transition: background-image $transition-normal;
+}
+
+
+
+/****************************** form request ******************************/
+.form__request {
+    margin-bottom: 56px;
+    padding: 26px 36px 30px;
+    overflow: hidden;
+    zoom: 1;
+    border-left: 4px solid #f16226;
+    background-color: $white;
+    box-shadow: 0 2px 6px 0 rgba(1,1,1,.08);
+    
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    
+    &:after {
+        clear: both;
+    }
+    
+    .form__container {
+        margin-right: 190px;
+        clear: none;
+        padding: 0;
+        border: 0;
+    }
+    
+    .form__container_field {
+        width: 48.5%;
+        float: left;
+        
+        &:last-child {
+            float: right;
+        }
+    }
+    
+    .form__submit {
+        width: 170px;
+        float: right;
+    }
+    
+    .form__submit_button {
+        margin-right: 0;
+        padding: 0 25px;
+        background-color: #286297;
+        
+        &:hover {
+            background-color: #0c3a65;
+        }
+    }
+}
+
+.form__request_info {
+    margin: 13px 0 34px;
+    font-size: 16px;
+    color: $gray;
+}
+
+
+
+/****************************** form presentation on clients page ******************************/
+.form__presentation {
+    margin-left: 305px;
+    
+    .form__submit_button {
+        margin-right: 0;
+        width: 210px;
+        float: right;
+        padding: 0;
+        background-color: $orange;
+    }
+    
+    .form__container_field {
+        width: 210px;
+        margin-bottom: 30px;
+        float: left;
+    
+        &:nth-child(2n) {
+            float: right;
+        }
+    }
+    
+    .form__container_input {
+        font-size: 12px;
+        font-family: $r-medium;
+    }
+}
+
+
+
+/****************************** form feedback ******************************/
+.block__feedback {
+    margin-bottom: 69px;
+    padding: 17px 40px 30px;
+    background-color: $white;
+    box-shadow: 0 2px 6px 0 rgba(1,1,1,.08);
+}
+
+.form__feedback {
+    .subtitle_main {
+        margin-bottom: 31px;
+    }
+    
+    .form__container {
+        margin-bottom: 30px;
+        padding: 0;
+        border-bottom: 0;
+    }
+    
+    .form__container_field {
+        margin: 0;
+    }
+    
+    .form__submit {
+        margin-top: -16px;
+    }
+    
+    .form__submit_button {
+        background-color: $blue;
+        
+        &:hover {
+            background-color: #0c3a65;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

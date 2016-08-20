@@ -1,0 +1,40 @@
+.cols {
+    overflow: hidden;
+    zoom: 1;
+    
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    
+    &:after {
+        clear: both;
+    }
+}
+
+.col_2 {
+    width: 50%;
+    float: left;
+}
+
+.col_3 {
+    width: calc(100%/3);
+    float: left;
+}
+
+.col_3_2 {
+    width: calc(100%*2/3);
+    float: left;
+}
+
+.col_4 {
+    width: 25%;
+    float: left;
+}
+
+.col_5 {
+    width: 20%;
+    float: left;
+}
+

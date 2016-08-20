@@ -1,0 +1,123 @@
+/********** sidebar with menu **********/
+.sidebar {
+    position: absolute;
+    width: 330px;
+    margin-left: -40px;
+    float: left;
+    z-index: 99;
+    
+    &.sidebar_procedure {
+        width: 260px;
+        margin-left: 0;
+        padding-bottom: 45px;
+    }
+    
+    &.is-fixed {
+        top: 0;
+        position: fixed;
+    }
+    
+    &.is-fixed-bottom {
+        position: absolute;
+    }
+}
+
+.sidebar__menu {
+    padding: 22px 0 1px;
+    background-color: #286297;
+    
+    li:first-child {
+        
+        .sidebar__menu_link {
+            border-top: 0;
+        }
+    }
+    
+    & > li {
+        padding: 0 40px;
+    }
+}
+
+.sidebar__menu_link {
+    display: block;
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+    border-top: 1px solid #1a4e7d;
+    
+    &:hover,
+    &.is-active {
+        color: #7bbdfe;
+    }
+    
+    .is-active & {
+        font-family: $r-bold;
+        color: #7bbdfe;
+    }
+}
+
+.sidebar__menu_link_special {
+    display: block;
+    margin-top: 23px;
+    margin-bottom: 30px;
+    font: 14px/40px $r-bold;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.sidebar__menu_link_special_orange {
+    color: $white;
+    background-color: $orange;
+    
+    &:hover {
+        background-color: #da490b;
+    }
+}
+
+.sidebar__menu_link_special_white {
+    color: #286297;
+    background-color: $white;
+}
+
+.sidebar__menu_bottom {
+    padding: 36px 40px 20px;
+    background-color: $white;
+    
+    li {
+        margin-bottom: 25px;
+    }
+}
+
+.sidebar__menu_bottom_link {
+    font: 16px/24px $r-regular;
+    color: $blue;
+    
+    &:hover {
+        color: #0c3a65;
+    }
+}
+
+
+
+//submenu
+.sidebar__menu_sub {
+    display: none;
+    padding-bottom: 17px;
+    line-height: 20px;
+    
+    li {
+        margin-bottom: 14px;
+    }
+}
+
+.sidebar__menu_sub_link {
+    font-size: 14px;
+    line-height: 20px;
+    color: $white;
+    
+    &:hover {
+        color: #7bbdfe;
+    }
+}
+

@@ -1,0 +1,225 @@
+<form class="form form__procedure" action="" method="">
+	<div class="form__container form__container_tabs">
+		<ul class="form__container_tablist">
+			<li>
+				<label class="form__container_tablist_label">
+					<input name="tablist_category" class="form__container_tablist_input" type="radio" checked />
+					<p class="form__container_tablist_label_info"><span>Актуальные</span></p>
+				</label>
+			</li>
+			<li>
+				<label class="form__container_tablist_label">
+					<input name="tablist_category" class="form__container_tablist_input" type="radio" />
+					<p class="form__container_tablist_label_info"><span>Архив</span></p>
+				</label>
+			</li>
+			<li>
+				<label class="form__container_tablist_label">
+					<input name="tablist_category" class="form__container_tablist_input" type="radio" />
+					<p class="form__container_tablist_label_info"><span>Все</span></p>
+				</label>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="form__container form__container_toggle">
+		<p class="form__container_title"><span class="form__container_title_toggle">Секция торгов</span></p>
+		<div class="form__container_in">
+			<p class="form__container_field form__container_field_checkbox">
+				<label class="form__container_field_checkbox_label">
+					<input class="form__container_field_checkbox_input" type="checkbox" hidden />
+					<span>Обшая</span>
+				</label>
+			</p>
+			<p class="form__container_field form__container_field_checkbox">
+				<label class="form__container_field_checkbox_label">
+					<input class="form__container_field_checkbox_input" type="checkbox" hidden />
+					<span>ГК “Газпром”</span>
+				</label>
+			</p>
+			<p class="form__container_field form__container_field_checkbox">
+				<label class="form__container_field_checkbox_label">
+					<input class="form__container_field_checkbox_input" type="checkbox" hidden />
+					<span>Неликвиды</span>
+				</label>
+			</p>
+		</div>
+	</div>
+	
+	<div class="form__container">
+		<p class="form__container_field"><input class="form__container_input" type="text" placeholder="Номер процедуры" /></p>
+		<p class="form__container_field"><input class="form__container_input" type="text" placeholder="Номер на ООС" /></p>
+		<p class="form__container_field"><input class="form__container_input" type="text" placeholder="Заказчик" /></p>
+	</div>
+	
+	<div class="form__container form__container_toggle">
+		<p class="form__container_title"><span class="form__container_title_toggle">Цена</span></p>
+		<div class="form__container_in">
+			<div class="form__container_half">
+				<p class="form__container_field">
+					<label class="form__container_label">
+						<span class="form__container_field_info_date">от</span>
+						<input class="form__container_input" type="text" placeholder="0" />
+					</label>
+				</p>
+				<p class="form__container_field">
+					<label class="form__container_label">
+						<span class="form__container_field_info_date">до</span>
+						<input class="form__container_input" type="text" placeholder="98 000 000" />
+					</label>
+				</p>
+			</div>
+			
+			
+			<p class="form__container_field form__container_field_checkbox">
+				<label class="form__container_field_checkbox_label">
+					<input class="form__container_field_checkbox_input" type="checkbox" hidden />
+					<span>Без указания цены</span>
+				</label>
+			</p>
+		</div>
+	</div>
+	
+	<div class="form__container form__container_toggle">
+		<p class="form__container_title"><span class="form__container_title_toggle">Дата публикации</span></p>
+		<div class="form__container_in">
+			<div class="form__container_half">
+				<p class="form__container_field">
+					<label class="form__container_label">
+						<span class="form__container_field_info_date">с</span>
+						<input class="form__container_input" type="text" placeholder="" />
+						<span class="form_icon_calendar"></span>
+					</label>
+				</p>
+				<p class="form__container_field">
+					<label class="form__container_label">
+						<span class="form__container_field_info_date">по</span>
+						<input class="form__container_input" type="text" placeholder="" />
+						<span class="form_icon_calendar"></span>
+					</label>
+				</p>
+			</div>
+			<p class="form__container_info">Окончание приема</p>
+			<div class="form__container_half">
+				<p class="form__container_field">
+					<label class="form__container_label">
+						<span class="form__container_field_info_date">с</span>
+						<input class="form__container_input" type="text" placeholder="" />
+						<span class="form_icon_calendar"></span>
+					</label>
+				</p>
+				<p class="form__container_field">
+					<label class="form__container_label">
+						<span class="form__container_field_info_date">по</span>
+						<input class="form__container_input" type="text" placeholder="" />
+						<span class="form_icon_calendar"></span>
+					</label>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="form__container form__container_toggle">
+		<p class="form__container_title"><span class="form__container_title_toggle">Тип торгов</span></p>
+		<div class="form__container_in">
+			<p class="form__container_field form__container_field_checkbox">
+				<label class="form__container_field_checkbox_label">
+					<input class="form__container_field_checkbox_input" type="checkbox" hidden />
+					<span>Конкурс</span>
+				</label>
+			</p>
+			<p class="form__container_field form__container_field_checkbox">
+				<label class="form__container_field_checkbox_label">
+					<input class="form__container_field_checkbox_input" type="checkbox" hidden />
+					<span>Запрос котировок</span>
+				</label>
+			</p>
+			<p class="form__container_field form__container_field_checkbox">
+				<label class="form__container_field_checkbox_label">
+					<input class="form__container_field_checkbox_input" type="checkbox" hidden />
+					<span>Аукционы на повышение</span>
+				</label>
+			</p>
+			<p class="form__container_field form__container_field_checkbox">
+				<label class="form__container_field_checkbox_label">
+					<input class="form__container_field_checkbox_input" type="checkbox" hidden />
+					<span>Аукционы на понижение</span>
+				</label>
+			</p>
+			<p class="form__container_field form__container_field_checkbox">
+				<label class="form__container_field_checkbox_label">
+					<input class="form__container_field_checkbox_input" type="checkbox" hidden />
+					<span>Попозиционные</span>
+				</label>
+			</p>
+		</div>
+	</div>
+	
+	<div class="form__container form__container_toggle">
+		<p class="form__container_title"><span class="form__container_title_toggle">Параметры</span></p>
+		<div class="form__container_in">
+			<p class="form__container_field form__container_field_checkbox">
+				<label class="form__container_field_checkbox_label">
+					<input class="form__container_field_checkbox_input" type="checkbox" hidden />
+					<span>Без ЭП</span>
+				</label>
+			</p>
+			<p class="form__container_field form__container_field_checkbox">
+				<label class="form__container_field_checkbox_label">
+					<input class="form__container_field_checkbox_input" type="checkbox" hidden />
+					<span>С ЭП</span>
+				</label>
+			</p>
+			<p class="form__container_field form__container_field_checkbox">
+				<label class="form__container_field_checkbox_label">
+					<input class="form__container_field_checkbox_input" type="checkbox" hidden />
+					<span>Без обеспечения</span>
+				</label>
+			</p>
+			<p class="form__container_field form__container_field_checkbox">
+				<label class="form__container_field_checkbox_label">
+					<input class="form__container_field_checkbox_input" type="checkbox" hidden />
+					<span>С обеспечением</span>
+				</label>
+			</p>
+			<p class="form__container_field form__container_field_checkbox">
+				<label class="form__container_field_checkbox_label">
+					<input class="form__container_field_checkbox_input" type="checkbox" hidden />
+					<span>Все</span>
+				</label>
+			</p>
+		</div>
+	</div>
+	
+	<div class="form__container form__container_links">
+		<a class="form__container_link" href="#">ОКВЭД</a>
+		<a class="form__container_link" href="#">Направления торгов</a>
+	</div>
+	
+	<div class="form__container form__container_toggle">
+		<p class="form__container_title"><span class="form__container_title_toggle">Регион</span></p>
+		<div class="form__container_in">
+			<p class="form__container_field form__container_field_selected_region">
+				<label class="form__container_label">
+					<input class="form__container_input" type="text" disabled value="Москва (297)" /><span class="form_icon_cross"></span>
+				</label>
+			</p>
+			<p class="form__container_field">
+				<label class="form__container_label">
+					<input class="form__container_input" type="text" placeholder="Добавить регион" /><span class="form_icon_place"></span>
+				</label>
+			</p>
+		</div>
+		<div class="form__submit">
+			<button class="form__submit_button">Применить</button>
+			<p class="form__container_field form__container_field_checkbox">
+				<label class="form__container_field_checkbox_label">
+					<input class="form__container_field_checkbox_input" type="checkbox" hidden />
+					<span>Запомнить</span>
+				</label>
+			</p>
+		</div>
+	</div>
+	
+	<a href="#" class="link_subscribe form-subscribe"><span class="link_subscribe_print"></span>Подписаться на обновления</a>
+</form>

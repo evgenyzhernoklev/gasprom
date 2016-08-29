@@ -2800,6 +2800,57 @@
 
 
 
+/****************************** page galleries ******************************/
+.section_common_gallery {
+    height: 385px;
+    padding: 65px 0 20px;
+    color: $white;
+    background: url(../img/bg/galleries_bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.section_common_gallery_date {
+    margin-bottom: 45px;
+}
+
+.section_common_gallery_date_number {
+    display: inline-block;
+    margin-right: 15px;
+    float: left;
+    font: 60px/60px $r-light;
+}
+
+.section_common_gallery_date_month {
+    display: block;
+    font-size: 23px;
+    line-height: 30px;
+}
+
+.section_common_gallery_date_year {
+    display: block;
+    font-size: 23px;
+    line-height: 30px;
+}
+
+.section_common_gallery_title {
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.section_common_gallery_link {
+    color: $white;
+    border-bottom: 1px solid $white;
+    
+    &:hover {
+        border-bottom-color: transparent;
+    }
+}
+
+
+
+.galleries_wrapper {
+    margin-top: 30px;
+}
 
 
 

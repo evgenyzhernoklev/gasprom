@@ -2152,6 +2152,7 @@
     }
     
     .block__docs_lot_info_title {
+        margin: 0;
         font: 20px/40px $r-light;
         color: #000;
     }
@@ -2328,4 +2329,216 @@
     margin-left: 240px;
     padding-right: 20px;
 }
+
+
+
+/****************************** page vacancies ******************************/
+.section_common_vacancies {
+    padding: 60px 0 70px;
+    color: $white;
+    background: url('../img/bg/vacancies_bg.jpg') no-repeat center center;
+    background-size: cover;
+    
+    .content__in {
+        padding-left: 120px;
+    }
+}
+
+.section_common_vacancies_title {
+    max-width: 740px;
+    padding-left: 38px;
+    padding-bottom: 30px;
+    font: 22px/32px $r-medium;
+    border-left: 4px solid #f39e24;
+}
+
+.section_common_vacancies_subtitle {
+    max-width: 740px;
+    padding-left: 38px;
+    border-left: 4px solid #f39e24;
+}
+
+
+
+.block__title_vacancies {
+    
+    .title_main {
+        width: 30%;
+    }
+}
+
+.block__title_vacancies_info {
+    padding-top: 11px;
+    width: 60%;
+    float: right;
+    font-size: 14px;
+    text-align: right;
+    color: $gray;
+}
+
+.block__title_vacancies_info_link {
+    margin-left: 5px;
+    padding-left: 30px;
+    font-size: 25px;
+    color: $blue;
+    background: url('../img/icons/print_vacancies.png') no-repeat left center;
+    
+    &:hover {
+        color: #245179;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.block__docs_vacancies {
+    float: none;
+    clear: both;
+    
+    &.block__docs {
+        margin: 42px 0 60px;
+    }
+    
+    .col_2 {
+        width: 49.5%;
+        
+        &:nth-child(2n) {
+            float: right;
+        }
+    }
+    
+    .block__docs_lot_info {
+        padding: 28px 70px 28px 40px;
+        background-color: $white;
+        
+        &:hover {
+            background-color: #f5f5f5;
+        }
+    }
+    
+    .block__docs_lot_info_arrow {
+        top: 26px;
+        right: 33px;
+        background-image: url(../img/icons/arrow_down_gray.png);
+    }
+    
+    .block__docs_lot_info_title {
+        margin: 0;
+    }
+    
+    .block__docs_lot_content {
+        padding: 0 40px 5px;
+    }
+}
+
+
+
+.vacancies__info_container {
+    padding-top: 30px;
+    border-top: 1px solid #c2c6cb;
+}
+
+.vacancies__info {
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.vacancies__info_title {
+    margin-bottom: 23px;
+    font: 18px/24px $r-medium;
+}
+
+.vacancies__info_subtitle {
+    margin-bottom: 18px;
+    font: 14px/20px $r-bold;
+    text-transform: uppercase;
+    color: $gray;
+}
+
+.vacancies__info_list {
+    margin-bottom: 25px;
+    
+    li {
+        position: relative;
+        margin-bottom: 16px;
+        padding-left: 15px;
+        font-size: 14px;
+        line-height: 20px;
+        color: $gray;
+        
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #f39e24;
+            position: absolute;
+            top: 7px;
+            left: 0;
+        }
+    }
+}
+
+.vacancies__info_text {
+    margin: 4px 0 25px;
+    font-size: 14px;
+    line-height: 20px;
+    color: $gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

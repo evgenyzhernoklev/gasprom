@@ -2729,6 +2729,11 @@
 
 
 .tabs__info {
+    display: none;
+    
+    &.is-active {
+        display: block;
+    }
     
     .block__docs_lot {
         background: $white;
@@ -2908,6 +2913,9 @@
     color: $gray;
 }
 
+
+
+//procedure path
 
 
 

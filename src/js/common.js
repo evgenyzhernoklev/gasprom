@@ -150,6 +150,28 @@ $(document).ready(function() {
     
     
     
+    //tabs on providers page
+    var $tabLinks = $('.block__tabs_tab'),
+        $tabsBlocks = $('.tabs__info');
+    
+    $tabLinks.on('click', function(e) {
+        e.preventDefault();
+        
+        if ($(this).hasClass('is-active')) {
+            return false;
+        }
+        
+        var target = $(this).attr('href'),
+            $target = $(target);
+        
+        $tabLinks.removeClass('is-active');
+        $tabsBlocks.hide().removeClass('is-active');
+        $(this).addClass('is-active');
+        $target.fadeIn(300).addClass('is-active');
+    });
+    
+    
+    
     //slider on article page
     $('.slider__articles').slick({
         slidesToShow: 5,

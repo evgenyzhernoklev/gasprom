@@ -2779,7 +2779,11 @@
 }
 
 .block__docs_lot_info_number_fin2 {
-    
+    width: 50px;
+    height: 55px;
+    top: 10px;
+    left: 17px;
+    background: url('../img/icons/block__docs_lot_info_number_fin2.png') no-repeat center center;
 }
 
 
@@ -2797,6 +2801,115 @@
 .block__docs_lot_link_container {
     margin-top: 35px;
 }
+
+
+
+.block__docs_lot_content_listNum {
+    counter-reset: item;
+    
+    li {
+        position: relative;
+        margin-bottom: 20px;
+        padding-left: 22px;
+        
+        &:before {
+            content: counter(item)'.';
+            counter-increment: item;
+            position: absolute;
+            left: 0;
+            color: $gray;
+        }
+    }
+}
+
+
+
+//table rates
+.block__rates {
+    margin: 0 0 30px;
+}
+
+.block__rates_dark {
+    margin: 0 0 50px;
+    background-color: $gray;
+    
+    .block__rate_title,
+    .block__rate_info,
+    .block__rate_sum_number {
+        color: $white;
+    }
+    
+    .block__rate_sum {
+        padding-right: 40px;
+        color: $white;
+    }
+    
+    .block__rate_sum_rubble {
+        color: #aabdcd;
+    }
+}
+
+.block__rate {
+    padding: 16px 0 19px;
+    border-bottom: 1px solid #eaedef;
+    
+    &:last-child {
+        border: 0;
+    }
+}
+
+.block__rate_header {
+    border-bottom-color: #c2c6cb;
+    
+    .block__rate_title {
+        font-family: $r-regular;
+    }
+    
+    .block__rate_info {
+        color: $gray;
+    }
+    
+    .block__rate_sum {
+        color: $gray;
+    }
+}
+
+.block__rate_title {
+    width: 28%;
+    float: left;
+    padding: 0 30px;
+    font: 14px/22px $r-bold;
+    color: $gray;
+}
+
+.block__rate_info {
+    width: 48%;
+    float: left;
+    padding-right: 40px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.block__rate_sum {
+    width: 24%;
+    float: left;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: right;
+}
+
+.block__rate_sum_number {
+    font: 20px/22px $r-bold;
+    color: $orange;
+}
+
+.block__rate_sum_rubble {
+    font: 20px/22px $r-bold;
+    color: $gray;
+}
+
+
+
 
 
 
@@ -2851,11 +2964,6 @@
 .galleries_wrapper {
     margin-top: 30px;
 }
-
-
-
-
-
 
 
 

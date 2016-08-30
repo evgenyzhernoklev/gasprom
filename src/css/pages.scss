@@ -2916,8 +2916,94 @@
 
 
 //procedure path
+.block__path {
+    margin: 0 0 36px;
+    counter-reset: item;
+    font-size: 0;
+    white-space: nowrap;
+    
+    &:last-child {
+        margin-bottom: 10px;
+    }
+}
 
+.block__path_item {
+    position: relative;
+    display: inline-block;
+    padding: 11px 12px 0 47px;
+    height: 62px;
+    font-size: 14px;
+    line-height: 20px;
+    color: $white;
+    vertical-align: bottom;
+    background: linear-gradient(to right, #519aaa, #286297);
+    
+    &.block__path_itemLine {
+        padding-top: 21px;
+    }
+    
+    &:first-child {
+        padding-left: 27px;
+        
+        &:before {
+            left: 12px;
+        }
+    }
+    
+    &:last-child {
+        span {
+            &:after {
+                display: none;
+            }
+        }
+    }
+    
+    &:before {
+        content: counter(item)'.';
+        counter-increment: item;
+        position: absolute;
+        left: 32px;
+    }
+    
+    &:after {
+        content: ''; 
+        position: absolute;
+        top: 0;
+        right: -52px;
+        border: 31px solid transparent;	
+        border-left: 21px solid #286297;
+        z-index: 2;
+    }
+    
+    span {
+        &:after {
+            content: ''; 
+            position: absolute;
+            top: 0;
+            right: -53px;
+            border: 31px solid transparent;	
+            border-left: 21px solid #e5eff3;
+            z-index: 1;
+        }
+    }
+}
 
+.block__path_orange {
+    
+    .block__path_item {
+        background: linear-gradient(to right, #f39e24, #f16326);
+        
+        &:after {
+            border-left-color: #f16326;
+        }
+        
+        span {
+            &:after {
+                border-left-color: #feefe1;
+            }
+        }
+    }
+}
 
 
 

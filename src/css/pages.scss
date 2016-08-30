@@ -3073,3 +3073,136 @@
 
 
 
+/****************************** page gallery ******************************/
+.block__title_date {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 20px;
+    color: $gray;
+    
+    span {
+        color: $black;
+    }
+}
+
+
+
+.block__gallery_wrapper {
+    margin-top: 45px;
+}
+
+.block__gallery {
+    margin-right: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.block__gallery_item {
+    flex-basis: 25%;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.block__gallery_item_img {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+//popup gallery
+.gallery__wrapper {
+    display: none;
+    width: 850px;
+    height: 592px;
+    background-color: $white;
+}
+
+.gallery__title {
+    padding: 0 140px 0 40px;
+    height: 76px;
+    font: 26px/76px $r-bold;
+    color: $white;
+    background-color: #296397;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.gallery__close {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 23px;
+    right: 14px;
+    cursor: pointer;
+    
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        right: 14px;
+        width: 2px;
+        height: 25px;
+        background-color: $white;
+        transform: rotate(45deg);
+        cursor: pointer;
+    }
+    
+     &:after {
+         transform: rotate(-45deg);
+     }
+}
+
+.gallery__slider {
+    
+    .slick-arrow {
+        position: absolute;
+        z-index: 10;
+        bottom: 18px;
+        font-size: 0;
+        width: 40px;
+        height: 40px;
+        background-color: #eef2f5;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .slick-prev {
+        left: 20px;
+        background-image: url('../img/icons/arrow_gallery_left.png');
+    }
+    
+    .slick-next {
+        right: 20px;
+        background-image: url('../img/icons/arrow_gallery_right.png');
+    }
+}
+
+.gallery__slider_slide {
+    
+    img {
+        width: 100%;
+    }
+}
+
+.gallery__slider_slide_imgWrapper {
+    height: 440px;
+    overflow: hidden;
+}
+
+.gallery__slider_slide_count {
+    height: 76px;
+    line-height: 76px;
+    text-align: center;
+}
+
+
+

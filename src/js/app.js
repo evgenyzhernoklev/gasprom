@@ -8,5 +8,6 @@
 /*
  * Custom
  */
+//= vendor/bpopup.js
 //= common.js
 

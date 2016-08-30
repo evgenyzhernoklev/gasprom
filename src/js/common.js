@@ -172,6 +172,59 @@ $(document).ready(function() {
     
     
     
+    //popup and gallery on gallery page
+    var $galleryImages = $('.block__gallery_item_img');
+    
+    if ($galleryImages.length) {
+        $galleryImages.on('click', function() {
+            var $galleryWrapper = $('<div class="gallery__wrapper"></div>'),
+                $galleryTitle = $('<div class="gallery__title"></div>'),
+                galleryTitleText = $('.block__gallery').data('title'),
+                $galleryClose = $('<div class="gallery__close"></div>'),
+                $gallerySlider = $('<div class="gallery__slider"></div>'),
+                galleryImagesLength = $galleryImages.length,
+                slidesHTML = '',
+                initialSlide = $galleryImages.index($(this));
+            
+            $galleryImages.each(function(index, element) {
+                var imageURL = $(element).attr('src');
+                
+                slidesHTML += '<div class="gallery__slider_slide">' +
+                                '<p class="gallery__slider_slide_imgWrapper"><img src=" '+ imageURL +'" /></p>' +
+                                '<p class="gallery__slider_slide_count">' + 
+                                    (index + 1) + ' / ' + galleryImagesLength +
+                                '</p>' +
+                              '</div>'
+            });
+            
+            $galleryTitle.text(galleryTitleText);
+            $galleryWrapper.append($galleryTitle);
+            $galleryWrapper.append($galleryClose);
+            $galleryWrapper.append($gallerySlider);
+            $gallerySlider.append(slidesHTML);
+            $body.append($galleryWrapper);
+            
+            $galleryWrapper.bPopup({
+                opacity: 0.7,
+                closeClass: 'gallery__close',
+                onClose: function() {
+                    $galleryWrapper.remove();
+                }
+            });
+            
+            $gallerySlider.slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                fade: true,
+                speed: 1000,
+                initialSlide: initialSlide
+            });
+        });
+    }
+    
+    
+    
     //slider on article page
     $('.slider__articles').slick({
         slidesToShow: 5,
